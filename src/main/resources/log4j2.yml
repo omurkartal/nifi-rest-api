@@ -1,0 +1,13 @@
+Configuration:
+  name: Default
+  status: warn
+  appenders:
+    Console:
+      name: STDOUT
+      PatternLayout:
+        Pattern: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %-4threadId [%thread] %-46logger{1.} %msg%n"
+  Loggers:
+    Root:
+      level: INFO
+      AppenderRef:
+        - ref: STDOUT
